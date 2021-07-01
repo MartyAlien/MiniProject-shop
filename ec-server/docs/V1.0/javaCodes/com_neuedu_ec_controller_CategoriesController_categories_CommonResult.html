@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CommonResult</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class CommonResult implements Serializable{
+
+    private Meta meta; //
+    private Categories[] message; //
+
+    public Meta getMeta(){
+        return meta;
+    }
+
+    public void setMeta(Meta meta){
+        this.meta = meta;
+    }
+
+    public Categories[] getMessage(){
+        return message;
+    }
+
+    public void setMessage(Categories[] message){
+        this.message = message;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class Meta implements Serializable{
+
+    private int code; //
+    private String msg; //
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMsg(){
+        return msg;
+    }
+
+    public void setMsg(String msg){
+        this.msg = msg;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class Categories implements Serializable{
+
+    private int catId; //分类id
+    private String catName; //分类名称
+    private String catIcon; //图标
+    private int catPid; //上级分类id
+    private int catLevel; //分类级别
+    private boolean catDeleted; //分类是否被删除
+    private String createtime; //数据创建时间
+    private Categories[] children; //下级分类
+
+    public int getCatId(){
+        return catId;
+    }
+
+    public void setCatId(int catId){
+        this.catId = catId;
+    }
+
+    public String getCatName(){
+        return catName;
+    }
+
+    public void setCatName(String catName){
+        this.catName = catName;
+    }
+
+    public String getCatIcon(){
+        return catIcon;
+    }
+
+    public void setCatIcon(String catIcon){
+        this.catIcon = catIcon;
+    }
+
+    public int getCatPid(){
+        return catPid;
+    }
+
+    public void setCatPid(int catPid){
+        this.catPid = catPid;
+    }
+
+    public int getCatLevel(){
+        return catLevel;
+    }
+
+    public void setCatLevel(int catLevel){
+        this.catLevel = catLevel;
+    }
+
+    public boolean getCatDeleted(){
+        return catDeleted;
+    }
+
+    public void setCatDeleted(boolean catDeleted){
+        this.catDeleted = catDeleted;
+    }
+
+    public String getCreatetime(){
+        return createtime;
+    }
+
+    public void setCreatetime(String createtime){
+        this.createtime = createtime;
+    }
+
+    public Categories[] getChildren(){
+        return children;
+    }
+
+    public void setChildren(Categories[] children){
+        this.children = children;
+    }
+
+}
+</pre>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

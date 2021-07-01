@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CommonResult</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class CommonResult implements Serializable{
+
+    private Meta meta; //
+    private Goods message; //
+
+    public Meta getMeta(){
+        return meta;
+    }
+
+    public void setMeta(Meta meta){
+        this.meta = meta;
+    }
+
+    public Goods getMessage(){
+        return message;
+    }
+
+    public void setMessage(Goods message){
+        this.message = message;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class Meta implements Serializable{
+
+    private int code; //
+    private String msg; //
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMsg(){
+        return msg;
+    }
+
+    public void setMsg(String msg){
+        this.msg = msg;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class Goods implements Serializable{
+
+    private int goodsId; //商品ID
+    private int catId; //分类id
+    private String goodsName; //商品名称
+    private double goodsPrice; //商品价格
+    private int goodsNumber; //商品数量
+    private int goodsWeight; //商品重量
+    private String goodsBigLogo; //商品大图标
+    private String goodsSmallLogo; //商品小图标
+    private String goodsIntroduce; //商品介绍
+    private long addTime; //商品添加时间
+    private long updTime; //商品更新时间
+    private int hotMumber; //热门商品数
+    private int catOneId; //所属一级分类
+    private int catTwoId; //所属二级分类
+    private int catThreeId; //所属三级分类
+    private String isDel; //是否删除
+    private boolean isPromote; //是否促销
+    private int goodsState; //商品状态
+    private String goodsCat; //商品分类
+    private String deleteTime; //删除时间
+    private String createtime; //数据创建时间
+    private GoodsPic[] pics; //图片列表
+    private GoodsAttrs[] attrs; //属性列表
+
+    public int getGoodsId(){
+        return goodsId;
+    }
+
+    public void setGoodsId(int goodsId){
+        this.goodsId = goodsId;
+    }
+
+    public int getCatId(){
+        return catId;
+    }
+
+    public void setCatId(int catId){
+        this.catId = catId;
+    }
+
+    public String getGoodsName(){
+        return goodsName;
+    }
+
+    public void setGoodsName(String goodsName){
+        this.goodsName = goodsName;
+    }
+
+    public double getGoodsPrice(){
+        return goodsPrice;
+    }
+
+    public void setGoodsPrice(double goodsPrice){
+        this.goodsPrice = goodsPrice;
+    }
+
+    public int getGoodsNumber(){
+        return goodsNumber;
+    }
+
+    public void setGoodsNumber(int goodsNumber){
+        this.goodsNumber = goodsNumber;
+    }
+
+    public int getGoodsWeight(){
+        return goodsWeight;
+    }
+
+    public void setGoodsWeight(int goodsWeight){
+        this.goodsWeight = goodsWeight;
+    }
+
+    public String getGoodsBigLogo(){
+        return goodsBigLogo;
+    }
+
+    public void setGoodsBigLogo(String goodsBigLogo){
+        this.goodsBigLogo = goodsBigLogo;
+    }
+
+    public String getGoodsSmallLogo(){
+        return goodsSmallLogo;
+    }
+
+    public void setGoodsSmallLogo(String goodsSmallLogo){
+        this.goodsSmallLogo = goodsSmallLogo;
+    }
+
+    public String getGoodsIntroduce(){
+        return goodsIntroduce;
+    }
+
+    public void setGoodsIntroduce(String goodsIntroduce){
+        this.goodsIntroduce = goodsIntroduce;
+    }
+
+    public long getAddTime(){
+        return addTime;
+    }
+
+    public void setAddTime(long addTime){
+        this.addTime = addTime;
+    }
+
+    public long getUpdTime(){
+        return updTime;
+    }
+
+    public void setUpdTime(long updTime){
+        this.updTime = updTime;
+    }
+
+    public int getHotMumber(){
+        return hotMumber;
+    }
+
+    public void setHotMumber(int hotMumber){
+        this.hotMumber = hotMumber;
+    }
+
+    public int getCatOneId(){
+        return catOneId;
+    }
+
+    public void setCatOneId(int catOneId){
+        this.catOneId = catOneId;
+    }
+
+    public int getCatTwoId(){
+        return catTwoId;
+    }
+
+    public void setCatTwoId(int catTwoId){
+        this.catTwoId = catTwoId;
+    }
+
+    public int getCatThreeId(){
+        return catThreeId;
+    }
+
+    public void setCatThreeId(int catThreeId){
+        this.catThreeId = catThreeId;
+    }
+
+    public String getIsDel(){
+        return isDel;
+    }
+
+    public void setIsDel(String isDel){
+        this.isDel = isDel;
+    }
+
+    public boolean getIsPromote(){
+        return isPromote;
+    }
+
+    public void setIsPromote(boolean isPromote){
+        this.isPromote = isPromote;
+    }
+
+    public int getGoodsState(){
+        return goodsState;
+    }
+
+    public void setGoodsState(int goodsState){
+        this.goodsState = goodsState;
+    }
+
+    public String getGoodsCat(){
+        return goodsCat;
+    }
+
+    public void setGoodsCat(String goodsCat){
+        this.goodsCat = goodsCat;
+    }
+
+    public String getDeleteTime(){
+        return deleteTime;
+    }
+
+    public void setDeleteTime(String deleteTime){
+        this.deleteTime = deleteTime;
+    }
+
+    public String getCreatetime(){
+        return createtime;
+    }
+
+    public void setCreatetime(String createtime){
+        this.createtime = createtime;
+    }
+
+    public GoodsPic[] getPics(){
+        return pics;
+    }
+
+    public void setPics(GoodsPic[] pics){
+        this.pics = pics;
+    }
+
+    public GoodsAttrs[] getAttrs(){
+        return attrs;
+    }
+
+    public void setAttrs(GoodsAttrs[] attrs){
+        this.attrs = attrs;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class GoodsPic implements Serializable{
+
+    private int picsId; //主键
+    private int goodsId; //商品ID
+    private String picsBig; //大图
+    private String picsMid; //中图
+    private String picsSma; //小图
+    private String picsBigUrl; //大图路径
+    private String picsMidUrl; //中图路径
+    private String picsSmaUrl; //小图路径
+    private String createtime; //创建时间
+
+    public int getPicsId(){
+        return picsId;
+    }
+
+    public void setPicsId(int picsId){
+        this.picsId = picsId;
+    }
+
+    public int getGoodsId(){
+        return goodsId;
+    }
+
+    public void setGoodsId(int goodsId){
+        this.goodsId = goodsId;
+    }
+
+    public String getPicsBig(){
+        return picsBig;
+    }
+
+    public void setPicsBig(String picsBig){
+        this.picsBig = picsBig;
+    }
+
+    public String getPicsMid(){
+        return picsMid;
+    }
+
+    public void setPicsMid(String picsMid){
+        this.picsMid = picsMid;
+    }
+
+    public String getPicsSma(){
+        return picsSma;
+    }
+
+    public void setPicsSma(String picsSma){
+        this.picsSma = picsSma;
+    }
+
+    public String getPicsBigUrl(){
+        return picsBigUrl;
+    }
+
+    public void setPicsBigUrl(String picsBigUrl){
+        this.picsBigUrl = picsBigUrl;
+    }
+
+    public String getPicsMidUrl(){
+        return picsMidUrl;
+    }
+
+    public void setPicsMidUrl(String picsMidUrl){
+        this.picsMidUrl = picsMidUrl;
+    }
+
+    public String getPicsSmaUrl(){
+        return picsSmaUrl;
+    }
+
+    public void setPicsSmaUrl(String picsSmaUrl){
+        this.picsSmaUrl = picsSmaUrl;
+    }
+
+    public String getCreatetime(){
+        return createtime;
+    }
+
+    public void setCreatetime(String createtime){
+        this.createtime = createtime;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class GoodsAttrs implements Serializable{
+
+    private int attrId; //主键
+    private int goodsId; //商品ID
+    private String attrName; //属性名称
+    private String attrValue; //属性属性值
+    private int addPrice; //属性价格
+    private String atrrVals; //属性多值
+    private String attrSel; //attr_sel
+    private String attrWrite; //attr_write
+    private String createtime; //创建时间
+
+    public int getAttrId(){
+        return attrId;
+    }
+
+    public void setAttrId(int attrId){
+        this.attrId = attrId;
+    }
+
+    public int getGoodsId(){
+        return goodsId;
+    }
+
+    public void setGoodsId(int goodsId){
+        this.goodsId = goodsId;
+    }
+
+    public String getAttrName(){
+        return attrName;
+    }
+
+    public void setAttrName(String attrName){
+        this.attrName = attrName;
+    }
+
+    public String getAttrValue(){
+        return attrValue;
+    }
+
+    public void setAttrValue(String attrValue){
+        this.attrValue = attrValue;
+    }
+
+    public int getAddPrice(){
+        return addPrice;
+    }
+
+    public void setAddPrice(int addPrice){
+        this.addPrice = addPrice;
+    }
+
+    public String getAtrrVals(){
+        return atrrVals;
+    }
+
+    public void setAtrrVals(String atrrVals){
+        this.atrrVals = atrrVals;
+    }
+
+    public String getAttrSel(){
+        return attrSel;
+    }
+
+    public void setAttrSel(String attrSel){
+        this.attrSel = attrSel;
+    }
+
+    public String getAttrWrite(){
+        return attrWrite;
+    }
+
+    public void setAttrWrite(String attrWrite){
+        this.attrWrite = attrWrite;
+    }
+
+    public String getCreatetime(){
+        return createtime;
+    }
+
+    public void setCreatetime(String createtime){
+        this.createtime = createtime;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

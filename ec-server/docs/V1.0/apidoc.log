@@ -1,0 +1,88 @@
+四月 14, 2021 9:17:19 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find java src paths:  [E:\development\ec-server\src\main\java\]
+四月 14, 2021 9:17:19 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: project type not set, try to figure out...
+四月 14, 2021 9:17:19 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start find controllers in path : E:\development\ec-server\src\main\java\
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : CategoriesController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : CatitemsController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : FloorController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : GoodsAttrsController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : GoodsController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : GoodsPicController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : HomeController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : OrderDitailsController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : OrdersController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : ProductListController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : SwiperdataController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : UserController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : CategoriesController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : CategoriesController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : CatitemsController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : FloorController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : GoodsAttrsController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : GoodsController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : GoodsController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : GoodsPicController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : HomeController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : HomeController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : OrderDitailsController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : OrdersController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : ProductListController.java
+四月 14, 2021 9:17:20 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : SwiperdataController.java
+四月 14, 2021 9:17:21 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : UserController.java
+四月 14, 2021 9:17:21 上午 io.github.yedaxia.apidocs.LogUtils warn
+警告: warning!! Cannot find java file , in java file : E:\development\ec-server\src\main\java\com\neuedu\ec\controller\UserController.java, className : Map, we cannot found more information of it, you've better to make it a JavaBean
+四月 14, 2021 9:17:21 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : UserController.java
+四月 14, 2021 9:17:21 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs start...
+四月 14, 2021 9:17:21 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : E:\development\ec-server\src\main\java\com\neuedu\ec\controller\CategoriesController.java
+四月 14, 2021 9:17:22 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : E:\development\ec-server\src\main\java\com\neuedu\ec\controller\CategoriesController.java
+四月 14, 2021 9:17:22 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : E:\development\ec-server\src\main\java\com\neuedu\ec\controller\GoodsController.java
+四月 14, 2021 9:17:22 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : E:\development\ec-server\src\main\java\com\neuedu\ec\controller\GoodsController.java
+四月 14, 2021 9:17:22 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : E:\development\ec-server\src\main\java\com\neuedu\ec\controller\HomeController.java
+四月 14, 2021 9:17:22 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : E:\development\ec-server\src\main\java\com\neuedu\ec\controller\HomeController.java
+四月 14, 2021 9:17:22 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : E:\development\ec-server\src\main\java\com\neuedu\ec\controller\UserController.java
+四月 14, 2021 9:17:22 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : E:\development\ec-server\src\main\java\com\neuedu\ec\controller\UserController.java
+四月 14, 2021 9:17:22 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index start !!!
+四月 14, 2021 9:17:22 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index done !!!
+四月 14, 2021 9:17:22 上午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs done !!!

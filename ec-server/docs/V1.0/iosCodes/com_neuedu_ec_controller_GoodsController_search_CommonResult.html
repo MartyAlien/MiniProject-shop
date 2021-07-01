@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CommonResult</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface CommonResult : NSObject
+
+//
+@property (nonatomic, strong) Meta meta;
+//
+@property (nonatomic, strong) EcPage message;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface Meta : NSObject
+
+//
+@property (nonatomic, strong) NSInteger code;
+//
+@property (nonatomic, assign) NSString msg;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface EcPage : NSObject
+
+//
+@property (nonatomic, strong) NSInteger total;
+//
+@property (nonatomic, strong) NSInteger pagenum;
+//
+@property (nonatomic, strong) Goods[] goods;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface Goods : NSObject
+
+//商品ID
+@property (nonatomic, strong) NSInteger goodsId;
+//分类id
+@property (nonatomic, strong) NSInteger catId;
+//商品名称
+@property (nonatomic, assign) NSString goodsName;
+//商品价格
+@property (nonatomic, strong) double goodsPrice;
+//商品数量
+@property (nonatomic, strong) NSInteger goodsNumber;
+//商品重量
+@property (nonatomic, strong) NSInteger goodsWeight;
+//商品大图标
+@property (nonatomic, assign) NSString goodsBigLogo;
+//商品小图标
+@property (nonatomic, assign) NSString goodsSmallLogo;
+//商品介绍
+@property (nonatomic, assign) NSString goodsIntroduce;
+//商品添加时间
+@property (nonatomic, strong) long addTime;
+//商品更新时间
+@property (nonatomic, strong) long updTime;
+//热门商品数
+@property (nonatomic, strong) NSInteger hotMumber;
+//所属一级分类
+@property (nonatomic, strong) NSInteger catOneId;
+//所属二级分类
+@property (nonatomic, strong) NSInteger catTwoId;
+//所属三级分类
+@property (nonatomic, strong) NSInteger catThreeId;
+//是否删除
+@property (nonatomic, assign) NSString isDel;
+//是否促销
+@property (nonatomic, strong) BOOL isPromote;
+//商品状态
+@property (nonatomic, strong) NSInteger goodsState;
+//商品分类
+@property (nonatomic, assign) NSString goodsCat;
+//删除时间
+@property (nonatomic, assign) NSString deleteTime;
+//数据创建时间
+@property (nonatomic, assign) NSString createtime;
+//图片列表
+@property (nonatomic, strong) GoodsPic[] pics;
+//属性列表
+@property (nonatomic, strong) GoodsAttrs[] attrs;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface GoodsPic : NSObject
+
+//主键
+@property (nonatomic, strong) NSInteger picsId;
+//商品ID
+@property (nonatomic, strong) NSInteger goodsId;
+//大图
+@property (nonatomic, assign) NSString picsBig;
+//中图
+@property (nonatomic, assign) NSString picsMid;
+//小图
+@property (nonatomic, assign) NSString picsSma;
+//大图路径
+@property (nonatomic, assign) NSString picsBigUrl;
+//中图路径
+@property (nonatomic, assign) NSString picsMidUrl;
+//小图路径
+@property (nonatomic, assign) NSString picsSmaUrl;
+//创建时间
+@property (nonatomic, assign) NSString createtime;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface GoodsAttrs : NSObject
+
+//主键
+@property (nonatomic, strong) NSInteger attrId;
+//商品ID
+@property (nonatomic, strong) NSInteger goodsId;
+//属性名称
+@property (nonatomic, assign) NSString attrName;
+//属性属性值
+@property (nonatomic, assign) NSString attrValue;
+//属性价格
+@property (nonatomic, strong) NSInteger addPrice;
+//属性多值
+@property (nonatomic, assign) NSString atrrVals;
+//attr_sel
+@property (nonatomic, assign) NSString attrSel;
+//attr_write
+@property (nonatomic, assign) NSString attrWrite;
+//创建时间
+@property (nonatomic, assign) NSString createtime;
+
+
+@end
+</xmp>
+</pre>
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

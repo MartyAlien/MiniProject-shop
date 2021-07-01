@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CommonResult</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class CommonResult implements Serializable{
+
+    private Meta meta; //
+    private FloorVO[] message; //
+
+    public Meta getMeta(){
+        return meta;
+    }
+
+    public void setMeta(Meta meta){
+        this.meta = meta;
+    }
+
+    public FloorVO[] getMessage(){
+        return message;
+    }
+
+    public void setMessage(FloorVO[] message){
+        this.message = message;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class Meta implements Serializable{
+
+    private int code; //
+    private String msg; //
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setCode(int code){
+        this.code = code;
+    }
+
+    public String getMsg(){
+        return msg;
+    }
+
+    public void setMsg(String msg){
+        this.msg = msg;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class FloorVO implements Serializable{
+
+    private FloorCopy floorTitle; //
+    private ProductList[] productList; //
+
+    public FloorCopy getFloorTitle(){
+        return floorTitle;
+    }
+
+    public void setFloorTitle(FloorCopy floorTitle){
+        this.floorTitle = floorTitle;
+    }
+
+    public ProductList[] getProductList(){
+        return productList;
+    }
+
+    public void setProductList(ProductList[] productList){
+        this.productList = productList;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class FloorCopy implements Serializable{
+
+    private String name; //一级分类名称
+    private String imageSrc; //一级分类图片
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getImageSrc(){
+        return imageSrc;
+    }
+
+    public void setImageSrc(String imageSrc){
+        this.imageSrc = imageSrc;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class ProductList implements Serializable{
+
+    private int id; //主键
+    private int fid; //楼层id
+    private String name; //名称
+    private String imageSrc; //图片路径
+    private String imageWidth; //图片宽度
+    private String openType; //打开方式
+    private String navigatorUrl; //跳转连接
+    private String createtime2; //创建时间
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public int getFid(){
+        return fid;
+    }
+
+    public void setFid(int fid){
+        this.fid = fid;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getImageSrc(){
+        return imageSrc;
+    }
+
+    public void setImageSrc(String imageSrc){
+        this.imageSrc = imageSrc;
+    }
+
+    public String getImageWidth(){
+        return imageWidth;
+    }
+
+    public void setImageWidth(String imageWidth){
+        this.imageWidth = imageWidth;
+    }
+
+    public String getOpenType(){
+        return openType;
+    }
+
+    public void setOpenType(String openType){
+        this.openType = openType;
+    }
+
+    public String getNavigatorUrl(){
+        return navigatorUrl;
+    }
+
+    public void setNavigatorUrl(String navigatorUrl){
+        this.navigatorUrl = navigatorUrl;
+    }
+
+    public String getCreatetime2(){
+        return createtime2;
+    }
+
+    public void setCreatetime2(String createtime2){
+        this.createtime2 = createtime2;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

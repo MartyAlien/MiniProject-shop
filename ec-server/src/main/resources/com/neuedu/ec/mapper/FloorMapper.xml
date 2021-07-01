@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neuedu.ec.mapper.FloorMapper">
+    <resultMap id="baseResultMap" type="com.neuedu.ec.entity.Floor">
+        <id column="ffid" jdbcType="INTEGER" property="id"/>
+        <result column="fname" jdbcType="VARCHAR" property="name"/>
+        <result column="fimage_src" jdbcType="VARCHAR" property="image_src"/>
+
+        <collection property="product_list" ofType="com.neuedu.ec.entity.ProductList">
+            <id column="id" jdbcType="INTEGER" property="id"/>
+            <result column="name" jdbcType="VARCHAR" property="name"/>
+            <result column="image_src" jdbcType="VARCHAR" property="image_src"/>
+            <result column="image_width" jdbcType="INTEGER" property="image_width"/>
+            <result column="open_type" jdbcType="VARCHAR" property="open_type"/>
+            <result column="navigator_url" jdbcType="VARCHAR" property="navigator_url"/>
+            <result column="createtime2" jdbcType="TIMESTAMP" property="createtime2"/>
+
+        </collection>
+
+    </resultMap>
+
+
+    <select id="floordata" resultMap="baseResultMap">
+      SELECT
+          floor.id ffid,
+          floor.name fname,
+          floor.image_src fimage_src,
+          pl.id,
+          pl.fid,
+          pl.name,
+          pl.image_src,
+          pl.image_width,
+          pl.open_type,
+          pl.navigator_url,
+          pl.createtime2
+        FROM
+          floor
+          LEFT JOIN product_list pl
+            ON floor.id = pl.fid
+    </select>
+
+
+</mapper>

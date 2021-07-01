@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neuedu.ec.mapper.GoodsMapper">
+
+    <resultMap id="resultMap" type="com.neuedu.ec.entity.Goods">
+        <id column="goods_id" jdbcType="INTEGER" property="goods_id"/>
+        <result column="cat_id" jdbcType="INTEGER" property="cat_id"/>
+        <result column="goods_name" jdbcType="VARCHAR" property="goods_name"/>
+        <result column="goods_price" jdbcType="DECIMAL" property="goods_price"/>
+        <result column="goods_number" jdbcType="INTEGER" property="goods_number"/>
+        <result column="goods_weight" jdbcType="INTEGER" property="goods_weight"/>
+        <result column="goods_big_logo" jdbcType="VARCHAR" property="goods_big_logo"/>
+        <result column="goods_small_logo" jdbcType="INTEGER" property="goods_small_logo"/>
+        <result column="goods_introduce" jdbcType="VARCHAR" property="goods_introduce"/>
+        <result column="add_time" jdbcType="BIGINT" property="add_time"/>
+        <result column="upd_time" jdbcType="BIGINT" property="upd_time"/>
+        <result column="hot_mumber" jdbcType="INTEGER" property="hot_mumber"/>
+        <result column="cat_one_id" jdbcType="INTEGER" property="cat_one_id"/>
+        <result column="cat_two_id" jdbcType="INTEGER" property="cat_two_id"/>
+        <result column="cat_three_id" jdbcType="INTEGER" property="cat_three_id"/>
+        <result column="goods_cat" jdbcType="VARCHAR" property="goods_cat"/>
+        <collection
+                property="pics"
+                ofType="com.neuedu.ec.entity.GoodsPic"
+                select="selectGoodsPicByGoodsId"
+                column="goods_id">
+
+        </collection>
+        <collection
+                property="attrs"
+                ofType="com.neuedu.ec.entity.GoodsAttrs"
+                select="selectGoodsAttrsByGoodsId"
+                column="goods_id">
+
+        </collection>
+
+
+
+    </resultMap>
+
+    <resultMap id="resultMap2" type="com.neuedu.ec.entity.GoodsPic">
+        <id column="pics_id" jdbcType="INTEGER" property="pics_id"/>
+        <result column="goods_id" jdbcType="INTEGER" property="goods_id"/>
+        <result column="pics_big" jdbcType="VARCHAR" property="pics_big"/>
+        <result column="pics_mid" jdbcType="VARCHAR" property="pics_mid"/>
+        <result column="pics_sma" jdbcType="VARCHAR" property="pics_sma"/>
+        <result column="pics_big_url" jdbcType="VARCHAR" property="pics_big_url"/>
+        <result column="pics_mid_url" jdbcType="VARCHAR" property="pics_mid_url"/>
+        <result column="pics_sma_url" jdbcType="VARCHAR" property="pics_sma_url"/>
+        <result column="createtime" jdbcType="TIMESTAMP" property="createtime"/>
+    </resultMap>
+
+    <resultMap id="resultMap3" type="com.neuedu.ec.entity.GoodsAttrs">
+        <id column="attr_id" jdbcType="INTEGER" property="attr_id" />
+        <result column="goods_id" jdbcType="INTEGER" property="goods_id" />
+        <result column="attr_name" jdbcType="VARCHAR" property="attr_name" />
+        <result column="attr_value" jdbcType="VARCHAR" property="attr_value" />
+        <result column="add_price" jdbcType="INTEGER" property="add_price" />
+        <result column="atrr_vals" jdbcType="VARCHAR" property="atrr_vals" />
+        <result column="attr_sel" jdbcType="VARCHAR" property="attr_sel" />
+        <result column="attr_write" jdbcType="VARCHAR" property="attr_write" />
+        <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    </resultMap>
+
+
+    <select id="detail" resultMap="resultMap">
+        select * from goods where goods_id = #{goods_id}
+    </select>
+
+
+    <select id="selectGoodsPicByGoodsId" resultMap="resultMap2">
+        select * from goods_pic where goods_id = #{goods_id}
+    </select>
+
+    <select id="selectGoodsAttrsByGoodsId" resultMap="resultMap3">
+        select * from goods_attrs where goods_id = #{goods_id}
+    </select>
+
+
+</mapper>

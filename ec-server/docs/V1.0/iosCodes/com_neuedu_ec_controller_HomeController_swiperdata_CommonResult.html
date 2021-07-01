@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CommonResult</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface CommonResult : NSObject
+
+//
+@property (nonatomic, strong) Meta meta;
+//
+@property (nonatomic, strong) Swiperdata[] message;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface Meta : NSObject
+
+//
+@property (nonatomic, strong) NSInteger code;
+//
+@property (nonatomic, assign) NSString msg;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface Swiperdata : NSObject
+
+//主键
+@property (nonatomic, strong) NSInteger id;
+//图片路径
+@property (nonatomic, assign) NSString imageSrc;
+//打开方式
+@property (nonatomic, assign) NSString openType;
+//商品id
+@property (nonatomic, assign) NSString goodsId;
+//导航链接
+@property (nonatomic, assign) NSString navigatorUrl;
+//创建时间
+@property (nonatomic, assign) NSString createtime;
+
+
+@end
+</xmp>
+</pre>
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CommonResult</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface CommonResult : NSObject
+
+//
+@property (nonatomic, strong) Meta meta;
+//
+@property (nonatomic, strong) Categories[] message;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface Meta : NSObject
+
+//
+@property (nonatomic, strong) NSInteger code;
+//
+@property (nonatomic, assign) NSString msg;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface Categories : NSObject
+
+//分类id
+@property (nonatomic, strong) NSInteger catId;
+//分类名称
+@property (nonatomic, assign) NSString catName;
+//图标
+@property (nonatomic, assign) NSString catIcon;
+//上级分类id
+@property (nonatomic, strong) NSInteger catPid;
+//分类级别
+@property (nonatomic, strong) NSInteger catLevel;
+//分类是否被删除
+@property (nonatomic, strong) BOOL catDeleted;
+//数据创建时间
+@property (nonatomic, assign) NSString createtime;
+//下级分类
+@property (nonatomic, strong) Categories[] children;
+
+
+@end
+</xmp>
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

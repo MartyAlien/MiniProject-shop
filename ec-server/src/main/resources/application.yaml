@@ -1,0 +1,33 @@
+server:
+  port: 80
+  servlet:
+    context-path: /api/v1/
+
+spring:
+  #数据源
+  datasource:
+    url: jdbc:mysql://localhost:3306/ec_weixin?useUnicode=true&useSSL=false&characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+cors:
+  origin: http://127.0.0.1:81
+
+logging:
+  level:
+    com.neuedu: debug
+    org: INFO
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+
+wechat:
+  appid: wxe4d6140c671e0230
+  secret: 966bf195d20193b0bbb1c509cfdfaa8c
+  grant_type: authorization_code
