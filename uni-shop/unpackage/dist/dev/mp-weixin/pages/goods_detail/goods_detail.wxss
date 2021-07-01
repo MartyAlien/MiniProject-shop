@@ -1,0 +1,149 @@
+page {
+  padding-bottom: 90rpx;
+}
+.detail_swiper swiper {
+  height: 65vw;
+  text-align: center;
+}
+.detail_swiper swiper image {
+  width: 60%;
+}
+.goods_price {
+  padding: 15rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #f00;
+}
+.goods_name_row {
+  border-top: 5rpx solid #dedede;
+  border-bottom: 5rpx solid #dedede;
+  padding: 10rpx 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.goods_name_row .goods_name {
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+          flex: 5;
+  color: #000;
+  font-size: 30rpx;
+  padding: 0 10rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.goods_name_row .goods_collect {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-left: 1rpx solid #000;
+}
+.goods_name_row .goods_collect .icon-shoucang1 {
+  color: orangered;
+}
+.goods_info .goods_info_title {
+  font-size: 32rpx;
+  color: #f00;
+  font-weight: 600;
+  padding: 20rpx;
+}
+.btm_tool {
+  border-top: 1rpx solid #ccc;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.btm_tool .tool_item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 24rpx;
+  position: relative;
+}
+.btm_tool .tool_item button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.btm_tool .btn_cart {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.btm_tool .btn_buy {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background-color: #eb4450;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+

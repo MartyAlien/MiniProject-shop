@@ -1,0 +1,1 @@
+<view><button type="primary" plain="{{true}}" data-event-opts="{{[['tap',[['handleGetUserInfo',['$event']]]]]}}" bindtap="__e">获取授权</button></view>

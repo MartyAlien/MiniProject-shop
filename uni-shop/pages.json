@@ -1,0 +1,132 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "商城-首页",
+			"enablePullDownRefresh": true
+		}
+	}, {
+		"path": "pages/cart/cart",
+		"style": {
+			"navigationBarTitleText": "商城-购物车",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/cartgroy/cartgroy",
+		"style": {
+			"navigationBarTitleText": "商城-分类",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/me/me",
+		"style": {
+			"navigationBarTitleText": "商城-我的",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/search/search",
+		"style": {
+			"navigationBarTitleText": "搜索更多宝贝",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/goods_list/goods_list",
+		"style": {
+			"navigationBarTitleText": "商品页面",
+			"enablePullDownRefresh": true,
+			"backgroundColor": "#0C5D82"
+		}
+
+	}, {
+		"path": "pages/goods_detail/goods_detail",
+		"style": {
+			"navigationBarTitleText": "宝贝详情",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/pay/pay",
+		"style": {
+			"navigationBarTitleText": "请确认订单",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/auth/auth",
+		"style": {
+			"navigationBarTitleText": "用户授权",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/order/order",
+		"style": {
+			"navigationBarTitleText": "订单详情",
+			"enablePullDownRefresh": false
+		}
+
+	}    ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "登录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/collect/collect",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的收藏",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/feedback/feedback",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "向我们反馈",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "亦同学商城",
+		"navigationBarBackgroundColor": "#0c5d82",
+		"backgroundColor": "#0c5d82",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	"tabBar": {
+		"list": [{
+			"pagePath": "pages/index/index",
+			"text": "首页",
+			"iconPath": "static/tabIcons/home.png",
+			"selectedIconPath": "static/tabIcons/home-o.png"
+		}, {
+			"pagePath": "pages/cartgroy/cartgroy",
+			"text": "分类",
+			"iconPath": "static/tabIcons/cartgory.png",
+			"selectedIconPath": "static/tabIcons/cartgory-o.png"
+		}, {
+			"pagePath": "pages/cart/cart",
+			"text": "购物车",
+			"iconPath": "static/tabIcons/cart.png",
+			"selectedIconPath": "static/tabIcons/cart-o.png"
+		}, {
+			"pagePath": "pages/me/me",
+			"text": "我的",
+			"iconPath": "static/tabIcons/me.png",
+			"selectedIconPath": "static/tabIcons/me-o.png"
+		}]
+	}
+}

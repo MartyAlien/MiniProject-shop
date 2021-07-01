@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "宝贝详情",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-badge": "/uni_modules/uni-badge/components/uni-badge/uni-badge"
+  }
+}

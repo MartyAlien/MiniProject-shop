@@ -1,0 +1,1 @@
+<view><view class="navbar-sea"><navigator class="navbar-inpput" url="/pages/search/search" open-type="navigate"><uni-icons vue-id="7bd4f5fc-1" type="search" size="15" bind:__l="__l"></uni-icons>搜 索</navigator></view></view>

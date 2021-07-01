@@ -1,0 +1,28 @@
+
+.tabs{}
+.tabs_title{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.title_item{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  padding: 15rpx 0;
+}
+.active{
+  color:#f00;
+  border-bottom: 5rpx solid currentColor;
+}
+.tabs_content{}
+

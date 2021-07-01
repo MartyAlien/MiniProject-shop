@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "商城-分类",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "my-search": "/components/mySearch/mySearch"
+  }
+}

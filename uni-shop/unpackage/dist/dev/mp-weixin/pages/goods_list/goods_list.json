@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "商品页面",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#0C5D82",
+  "usingComponents": {
+    "my-search": "/components/mySearch/mySearch",
+    "my-tab": "/components/myTab/myTab",
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons"
+  }
+}

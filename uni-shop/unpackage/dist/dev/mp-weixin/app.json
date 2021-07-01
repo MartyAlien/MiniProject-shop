@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/cartgroy/cartgroy",
+    "pages/me/me",
+    "pages/search/search",
+    "pages/goods_list/goods_list",
+    "pages/goods_detail/goods_detail",
+    "pages/pay/pay",
+    "pages/auth/auth",
+    "pages/order/order",
+    "pages/login/login",
+    "pages/collect/collect",
+    "pages/feedback/feedback"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "亦同学商城",
+    "navigationBarBackgroundColor": "#0c5d82",
+    "backgroundColor": "#0c5d82"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabIcons/home.png",
+        "selectedIconPath": "static/tabIcons/home-o.png"
+      },
+      {
+        "pagePath": "pages/cartgroy/cartgroy",
+        "text": "分类",
+        "iconPath": "static/tabIcons/cartgory.png",
+        "selectedIconPath": "static/tabIcons/cartgory-o.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "static/tabIcons/cart.png",
+        "selectedIconPath": "static/tabIcons/cart-o.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "static/tabIcons/me.png",
+        "selectedIconPath": "static/tabIcons/me-o.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
